@@ -1,31 +1,30 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# My Company Data
 
-Welcome pakkONE,
+## Purpose of the project
+The purpose of the project is to give the user an insight to employee data regarding Employer ID, Full name, age, nationality as well as the ability to see the average salary and gender difference within the company. Full name and Employer ID will not be made visible to the user because the information should stay anonymous.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+## User stories
+- As a user I would like to know what kind of input is required.
+- As a user I would like to know what options of information are available before I type it in the console.
+- As a user I would like to continue the program after an error has occurred.
+- As a user I would like to know what kind of Error has occured and what I need to change in my input to get the correct output.
 
-## Reminders
+## Features
+- 
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+## Future Features
+- I would like to add GUI to the application with charts of the data.
 
-## Creating the Heroku app
+## Lucid Chart
+![This is the lucid chart for the project](docs/lucidchart.png)
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+6. Flow chart (lucid chart)
+7. technology
+8. testing
+   8.1 code validation / Python validator
+   8.2 test cases (user story based with screenshots) / describe the steps I have taken to test
+   8.3 fixed bugs
+9. Deployment
+   9.1 via gitpod
+   9.2 via Heroku
+10. credits
