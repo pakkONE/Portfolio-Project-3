@@ -46,3 +46,13 @@ def get_input_data():
         salary_data()
 
 
+def validate_input():
+    try:
+        if command != int(1, 2, 3):
+            raise ValueError(
+            f"You have not entered one of the numbers provided above, please try again"
+        )
+    except ValueError as e:
+        print(f"You need to use ")
+
+
