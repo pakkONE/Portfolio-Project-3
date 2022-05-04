@@ -56,3 +56,16 @@ def validate_input():
         print(f"You need to use ")
 
 
+def nationalities_data(data):
+    countries = employees.col_values(5)
+
+
+def gender_data(data):
+    gender = employees.col_values(4)
+
+
+def salary_data(data):
+    salary = employees.col_values(6)
+
+
+welcome_text()
