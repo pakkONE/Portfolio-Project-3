@@ -30,3 +30,19 @@ def welcome_text():
     get_input_data()
 
 
+def get_input_data():
+    """
+    This input field will run the correct function
+    dependant on if the value entered is valid.
+    """
+    command = input("Enter a number listed above to view the data\n")
+    print("You have selected: " + command)
+
+    if command == 1:
+        nationalities_data()
+    elif command == 2:
+        gender_data()
+    elif command == 3:
+        salary_data()
+
+
