@@ -35,25 +35,36 @@ def get_input_data():
     This input field will run the correct function
     dependant on if the value entered is valid.
     """
-    command = input("Enter a number listed above to view the data\n")
-    print("You have selected: " + command)
+    
+    while True:
+        command = input("Enter a number listed above to view the data\n")
+        print("You have selected: " + command)
+        validate_input(command)
 
-    if command == 1:
-        nationalities_data()
-    elif command == 2:
-        gender_data()
-    elif command == 3:
-        salary_data()
+        if command == 1:
+            nationalities_data(command)
+        elif command == 2:
+            gender_data(command)
+        elif command == 3:
+            salary_data(command)
+        
+        if validate_input(command):
+            print("Your input has been validated, printing data to terminal")
+            break
+    return command
 
 
-def validate_input():
+def validate_input(values):
     try:
-        if command != int(1, 2, 3):
+        if values != 1 or 2 or 3:
             raise ValueError(
-            f"You have not entered one of the numbers provided above, please try again"
-        )
+                'You have not entered one of the numbers provided above'
+                )
     except ValueError as e:
-        print(f"You need to use ")
+        print(f"Invalid data: {e}, please try again")
+        return False
+    
+    return True
 
 
 def nationalities_data(data):
