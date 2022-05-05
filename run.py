@@ -1,3 +1,7 @@
+"""
+Here are the imports needed for the program to connect
+with Google Sheets API and Gspread
+"""
 import gspread
 from google.oauth2.service_account import Credentials
 
@@ -26,6 +30,11 @@ def welcome_text():
 
 
 def validate_input(values):
+    """
+    This function validates the user input
+    from the get_input_data function asking if the user
+    has entered either 1, 2, or 3, else print out an error message
+    """
     if values not in ['1', '2', '3']:
         print("Invalid data, please try again")
         return False
@@ -34,8 +43,9 @@ def validate_input(values):
 
 def get_input_data():
     """
-    This input field will run the correct function
-    dependant on if the value entered is valid.
+    Here the user input is stored in the variable command
+    which will be passaed through the validate_input function
+    and then run another function based on the choice the user made.
     """
     command = input("Enter a number listed above to view the data\n")
 
@@ -54,11 +64,19 @@ def get_input_data():
 
 
 def fetch_new_data():
+    """
+    This function will fetch fresh data from the Google Sheets worksheet
+    when the user makes an input to print out data
+    """
     sheet = GSPREAD_CLIENT.open('my-company-data')
     return sheet.worksheet('Employees')
 
 
 def nationalities_data():
+    """
+    Prints out statistical calculations of the employees
+    based on their nationalities
+    """
     print("Nationalities selected")
     employees = fetch_new_data()
     countries = employees.col_values(5)
@@ -67,6 +85,10 @@ def nationalities_data():
 
 
 def gender_data():
+    """
+    Prints out statistical calculations of the employees
+    based on their genders
+    """
     print("Genders selected")
     employees = fetch_new_data()
     gender = employees.col_values(4)
@@ -75,6 +97,10 @@ def gender_data():
 
 
 def salary_data():
+    """
+    Prints out statistical calculations of the employees
+    based on their salaries
+    """
     print("Salaries selected")
     employees = fetch_new_data()
     salary = employees.col_values(6)
