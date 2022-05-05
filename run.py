@@ -37,19 +37,18 @@ def get_input_data():
     """
     command = input("Enter a number listed above to view the data\n")
     print("You have selected: " + command)
-    validate_input(command)
 
     while True:
         if command == 1:
-            nationalities_data()
+            nationalities_data(1)
         elif command == 2:
-            gender_data()
+            gender_data(2)
         elif command == 3:
-            salary_data()
-
-        if validate_input(command):
+            salary_data(3)
+        
+        if validate_input(True):
             print("Your input has been validated, printing data to terminal")
-            break
+        break
     return command
 
 
@@ -69,18 +68,20 @@ def validate_input(values):
 def nationalities_data():
     countries = employees.col_values(5)
     print("Nationalities selected")
-    print(countries)
+    return countries
 
 
 def gender_data():
     gender = employees.col_values(4)
     print("Genders selected")
+    return gender
     print(gender)
 
 
 def salary_data():
     salary = employees.col_values(6)
     print("Salaries selected")
+    return salary
     print(salary)
 
 
