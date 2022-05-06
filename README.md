@@ -18,13 +18,18 @@ The purpose of the project is to give the user an insight to employee data regar
 ## Lucid Chart
 ![This is the lucid chart for the project](docs/lucidchart.png)
 
-6. Flow chart (lucid chart)
-7. technology
-8. testing
-   8.1 code validation / Python validator
-   8.2 test cases (user story based with screenshots) / describe the steps I have taken to test
-   8.3 fixed bugs
-9. Deployment
-   9.1 via gitpod
-   9.2 via Heroku
-10. credits
+## Technology
+- 
+
+
+## Testing
+   - 8.1 code validation / Python validator
+   - 8.2 test cases (user story based with screenshots) / describe the steps I have taken to test
+   - 8.3 fixed bugs
+
+
+## Deployment
+   - 9.1 via gitpod
+   - 9.2 via Heroku
+
+## Credits

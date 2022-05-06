@@ -80,7 +80,7 @@ def nationalities_data():
     print("Nationalities selected")
     employees = fetch_new_data()
     countries = employees.col_values(5)
-    print(countries)
+    print(countries[1:])
     return countries
 
 
@@ -92,7 +92,7 @@ def gender_data():
     print("Genders selected")
     employees = fetch_new_data()
     gender = employees.col_values(4)
-    print(gender)
+    print(gender[1:])
     return gender
 
 
@@ -104,8 +104,16 @@ def salary_data():
     print("Salaries selected")
     employees = fetch_new_data()
     salary = employees.col_values(6)
-    print(salary)
-    return salary
+    del salary[0]
+    salary_int = list(map(int, salary))
+    salary_total = sum(salary_int)
+    avg_salary = salary_total / len(salary_int)
+    low_salary = min(salary_int)
+    high_salary = max(salary_int)
+    print(f"The average monthly salary at the company is: ${avg_salary}")
+    print(f"The lowest monthly salary is: ${low_salary}")
+    print(f"The highest monthly salary is: ${high_salary}")
+    return salary_int
 
 
 def main():
