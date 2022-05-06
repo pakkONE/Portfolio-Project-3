@@ -108,6 +108,8 @@ I would like to add GUI to the application with charts of the data.
    - Then go to Deploy section and select GitHub and then log in with your GitHub account.
    - Remember to push your code every once in a while to Heroku.
 
+Find my app here: https://portfolioproject3.herokuapp.com/
+
 ## Credits
 <hr>
 
