@@ -92,7 +92,18 @@ def gender_data():
     print("Genders selected")
     employees = fetch_new_data()
     gender = employees.col_values(4)
-    print(gender[1:])
+    del gender[0]
+    males = gender.count('Male')
+    females = gender.count('Female')
+    total = len(gender)
+    percentage_male = males / len(gender)
+    perc_male = format(percentage_male, '%')
+    percentage_female = females / len(gender)
+    perc_female = format(percentage_female, '%')
+    print(f"There are a total of {total} employees at the company")
+    print(f"{females} females and {males} males")
+    print(f"The percentage of females are {perc_female}")
+    print(f"The percentage of males are {perc_male}")
     return gender
 
 
