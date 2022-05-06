@@ -80,7 +80,25 @@ def nationalities_data():
     print("Nationalities selected")
     employees = fetch_new_data()
     countries = employees.col_values(5)
-    print(countries[1:])
+    del countries[0]
+    dutch = countries.count("Dutch")
+    german = countries.count("German")
+    spanish = countries.count("Spanish")
+    french = countries.count("French")
+    finnish = countries.count("Finnish")
+    swedish = countries.count("Swedish")
+    danish = countries.count("Danish")
+    norwegian = countries.count("Norwegian")
+    countries = list(dict.fromkeys(countries))
+    print("The company has following nationalities represented:")
+    print(f"Dutch: {dutch}")
+    print(f"German: {german}")
+    print(f"Spanish: {spanish}")
+    print(f"French: {french}")
+    print(f"Finnish: {finnish}")
+    print(f"Swedish: {swedish}")
+    print(f"Danish: {danish}")
+    print(f"Norwegian: {norwegian}")
     return countries
 
 
