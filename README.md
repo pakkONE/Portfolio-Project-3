@@ -95,6 +95,7 @@ I would like to add GUI to the application with charts of the data.
   - I used Code Institute Python Essentials template (https://github.com/Code-Institute-Org/python-essentials-template)
   - Click Use this template.
   - GitPod will now set up the environment for you with all addons/shortcuts needed.'
+  - To run the program in GitPod what you have to do is type in ```python3 run.py``` in the terminal.
 
 ### _via Heroku_
 - Heroku provides the interface to be able to run python programs. This is how I set it up:
