@@ -81,6 +81,11 @@ I would like to add GUI to the application with charts of the data.
 ![Screenshot of the salary data category](docs/salary.png)
 - If the user enters "3" in the terminal, this data will be printed to the terminal
 
+### _Test cases - Wrong input_
+![Screenshot of wrong input to terminal](docs/wrong_input.png)
+- Here I have entered three incorrect inputs, a number higher than 1 to 3, a negative number, and a string.
+- This is the error messages shown to the user.
+
 ### _Fixed bugs_
 - Fixed bug where I used a while loop that ran indefinitely.
 - Fixed bug that didn't validate the user input. It didn't give an error but always printed out "Your input has been validated, printing data to terminal" to the terminal regardless of if the input was 1, 2 or 3 or even the word 'cat'.
