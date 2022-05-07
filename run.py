@@ -150,6 +150,7 @@ def main():
     Run all functions
     """
     welcome_text()
+    print('To view another category of data, please run the program again.')
 
 
 if __name__ == '__main__':
